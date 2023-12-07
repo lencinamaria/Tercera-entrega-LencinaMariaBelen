@@ -35,7 +35,7 @@ if (localStorage.getItem("productos")) {
 
 function filtrarProductos() {
     const body = document.querySelector("body");
-    body.innerHTML = ""; // Limpiar el body antes de agregar nuevos elementos
+    body.innerHTML = "";
     const input = document.getElementById("filtarP").value;
     const palabraClave = input.trim().toUpperCase();
     const resultado = lista.filter(producto => producto.nombre.toUpperCase().includes(palabraClave));
